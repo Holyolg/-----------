@@ -739,9 +739,12 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.relative {
+  position: relative;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mt-10 {
@@ -760,8 +763,8 @@ select {
   display: flex;
 }
 
-.h-10 {
-  height: 2.5rem;
+.grid {
+  display: grid;
 }
 
 .h-full {
@@ -772,28 +775,24 @@ select {
   min-height: 100%;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-full {
   width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
 }
 
-.items-center {
-  align-items: center;
-}
-
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -818,6 +817,10 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-3 {
@@ -893,11 +896,6 @@ select {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-indigo-600 {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -924,6 +922,47 @@ select {
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
 }
 
+.heart-container {
+  position: relative;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  z-index: auto;
+  left: 23px;
+  bottom: 3px;
+  width: 9px;
+  height: 15px;
+  background-color: red;
+  opacity: 70%;
+  box-shadow: -1px 0px 2px #444;
+  /* Скругляем верхние углы */
+  border-radius: 50px 50px 0 0;
+  /* Определяем угол наклона */
+  transform: rotate(315deg);
+}
+
+/* Формируем правую часть */
+
+.heart:before {
+  position: absolute;
+  width: 15px;
+  height: 9px;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background-color: red;
+  box-shadow: 0px 3px 3px #444444;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Убираем тень при наведении */
+
+.heart:hover:before, .heart:hover{
+  box-shadow:none;
+}
+
 .placeholder\:text-gray-400::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -937,11 +976,6 @@ select {
 .hover\:bg-indigo-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
-
-.hover\:text-indigo-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
 .focus\:ring-2:focus {
