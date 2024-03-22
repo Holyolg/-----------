@@ -10,13 +10,13 @@
 .heart {
     position: absolute;
     z-index: auto;
-    left: 23px;
-    bottom: 3px;
+    left: 22px;
+    bottom: 2px;
     width: 9px; 
     height: 15px;
-    background-color: red;
-    opacity: 70%;
-    box-shadow: -1px 0px 2px #444;
+    border-color: red;
+    background: transparent;
+    box-shadow: -1px 1px 3px red;
   /* Скругляем верхние углы */    
     -webkit-border-radius: 50px 50px 0 0;
     -moz-border-radius: 50px 50px 0 0;
@@ -36,13 +36,14 @@
     left: 0;
     bottom: 0;
     content: "";
-    background-color: red;
-    box-shadow: 0px 3px 3px #444444; 
+    background: transparent;
+    border-color: red;
+    box-shadow: 0px 1px 3px red; 
     -webkit-border-radius: 50px 50px 0 0;
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 0 50px 50px 0;
   }
   /* Убираем тень при наведении */
   .heart:hover:before, .heart:hover{
-      box-shadow:none;
+      
   }
