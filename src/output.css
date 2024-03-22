@@ -739,16 +739,8 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .m-auto {
@@ -791,11 +783,6 @@ select {
   max-width: 28rem;
 }
 
-.rotate-\[315deg\] {
-  --tw-rotate: 315deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
@@ -818,11 +805,6 @@ select {
   border-radius: 0.375rem;
 }
 
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
 .border-0 {
   border-width: 0px;
 }
@@ -830,11 +812,6 @@ select {
 .bg-indigo-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
-}
-
-.bg-red-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -909,11 +886,6 @@ select {
   letter-spacing: -0.025em;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -953,6 +925,47 @@ select {
 .ring-gray-300 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+}
+
+.heart-container {
+  position: relative;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  z-index: auto;
+  left: 23px;
+  bottom: 3px;
+  width: 9px;
+  height: 15px;
+  background-color: red;
+  opacity: 70%;
+  box-shadow: -1px 0px 2px #444;
+  /* Скругляем верхние углы */
+  border-radius: 50px 50px 0 0;
+  /* Определяем угол наклона */
+  transform: rotate(315deg);
+}
+
+/* Формируем правую часть */
+
+.heart:before {
+  position: absolute;
+  width: 15px;
+  height: 9px;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background-color: red;
+  box-shadow: 0px 3px 3px #444444;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Убираем тень при наведении */
+
+.heart:hover:before, .heart:hover{
+  box-shadow:none;
 }
 
 .placeholder\:text-gray-400::-moz-placeholder {
@@ -1031,4 +1044,3 @@ select {
     padding-right: 2rem;
   }
 }
-
