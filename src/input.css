@@ -10,13 +10,12 @@
 .heart {
     position: absolute;
     z-index: auto;
-    left: 22px;
-    bottom: 2px;
-    width: 9px; 
-    height: 15px;
-    border-color: red;
+    left: 0px;
+    bottom: 0px;
+    width: 15px; 
+    height: 25px;
     background: transparent;
-    box-shadow: -1px 1px 3px red;
+    box-shadow: -1px 1px 3px #ab8c77;
   /* Скругляем верхние углы */    
     -webkit-border-radius: 50px 50px 0 0;
     -moz-border-radius: 50px 50px 0 0;
@@ -31,14 +30,13 @@
   /* Формируем правую часть */
   .heart:before {
     position: absolute;
-    width: 15px;
-    height: 9px;
+    width: 25px;
+    height: 15px;
     left: 0;
     bottom: 0;
     content: "";
     background: transparent;
-    border-color: red;
-    box-shadow: 0px 1px 3px red; 
+    box-shadow: 0px 1px 3px #ab8c77; 
     -webkit-border-radius: 50px 50px 0 0;
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 0 50px 50px 0;

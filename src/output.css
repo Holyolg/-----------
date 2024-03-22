@@ -783,6 +783,12 @@ select {
   max-width: 28rem;
 }
 
+.scale-90 {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
@@ -819,8 +825,9 @@ select {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-6 {
-  padding: 1.5rem;
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-3 {
@@ -846,6 +853,10 @@ select {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -927,6 +938,18 @@ select {
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .heart-container {
   position: relative;
   z-index: 1;
@@ -935,13 +958,12 @@ select {
 .heart {
   position: absolute;
   z-index: auto;
-  left: 22px;
-  bottom: 2px;
-  width: 9px;
-  height: 15px;
-  border-color: red;
+  left: 0px;
+  bottom: 0px;
+  width: 15px;
+  height: 25px;
   background: transparent;
-  box-shadow: -1px 1px 3px red;
+  box-shadow: -1px 1px 3px #ab8c77;
   /* Скругляем верхние углы */
   border-radius: 50px 50px 0 0;
   /* Определяем угол наклона */
@@ -952,14 +974,13 @@ select {
 
 .heart:before {
   position: absolute;
-  width: 15px;
-  height: 9px;
+  width: 25px;
+  height: 15px;
   left: 0;
   bottom: 0;
   content: "";
   background: transparent;
-  border-color: red;
-  box-shadow: 0px 1px 3px red;
+  box-shadow: 0px 1px 3px #ab8c77;
   border-radius: 0 50px 50px 0;
 }
 
@@ -981,6 +1002,43 @@ select {
 .hover\:bg-indigo-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[ab8c77\]:hover {
+  background-color: ab8c77;
+}
+
+.hover\:bg-\[\#ab8c77\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(171 140 119 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#7b6457\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 100 87 / var(--tw-bg-opacity));
+}
+
+.before\:hover\:bg-red-700:hover::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.before\:hover\:bg-\[\#ab8c77\]:hover::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(171 140 119 / var(--tw-bg-opacity));
+}
+
+.before\:hover\:bg-\[\#7b6457\]:hover::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 100 87 / var(--tw-bg-opacity));
 }
 
 .focus\:ring-2:focus {
