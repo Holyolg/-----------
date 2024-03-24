@@ -12,7 +12,36 @@
   <div class="first-section">
       <img class="h-auto max-w-full" src="https://wedinvent.ru/css/time_to_travel_002/img/bg-first.jpg" alt="">
   </div>
+
+  <div class="timer-section flex flex-col justify-center items-center px-8 mt-10 text-center leading-9" >
+  <h2 class="text-5xl font-bold" id="scroll-transition">До начала свадьбы</h2>
+  <div class="timer grid grid-flow-col gap-5 justify-center text-center auto-cols-max mt-10 text-xl font-semibol">
+    <div class="timer__block flex flex-col p-2">
+      <span class="text-5xl bg-red-100 rounded-lg p-2">
+        <span id="days" class="">00</span>
+      </span>
+      Дней
+    </div> 
+    <div class="timer__block flex flex-col p-2">
+      <span id="hours" class="text-5xl bg-red-100 rounded-lg p-2">
+        <span>00</span>
+      </span>
+      Часов
+    </div> 
+    <div class="timer__block flex flex-col p-2">
+      <span id="minutes" class="text-5xl bg-red-100 rounded-lg p-2">
+        <span>00</span>
+      </span>
+      Минут
+    </div> 
+    <div class="timer__block flex flex-col p-2">
+      <span id="seconds" class="text-5xl bg-red-100 rounded-lg p-2">
+        <span>00</span>
+      </span>
+      Секунд
+    </div>
   </div>
+</div>
 
   <div class="second-section flex flex-col justify-center items-center px-8 mt-20 text-center leading-9" id="scroll-wrapper">
     <h2 class="text-5xl font-bold" id="scroll-transition">Дорогие друзья и родные!</h2>
@@ -21,9 +50,7 @@
 
   <div class="mt-24 text-center text-5xl font-bold leading-9 tracking-tight text-gray-900">Август
   <div class="m-auto max-w-md pt-8 px-8">
-  <div class='grid grid-cols-7 gap-2 relative text-gray-500 text-xl'>
-    <div class="heart transition ease-in-out  hover:bg-[#7b6457] scale-90 before:hover:bg-[#7b6457]">
-    </div>
+  <div class='grid grid-cols-7 gap-2 text-gray-500 text-xl'>
     <div class="text-gray-700">ПН</div>
     <div class="text-gray-700">ВТ</div>
     <div class="text-gray-700">СР</div>
@@ -51,7 +78,8 @@
     <div class=" ">15</div>
     <div class=" ">16</div>
     <div class=" ">17</div>
-    <div class="heart-container   relative">18
+    <div class="heart-container relative text-black">
+      <img class="h-8 max-w-full absolute left-2 opacity-75 transition ease-in-out delay-150 hover:scale-125 hover:opacity-100" src="/src/img/Group.svg"></img>18
     </div>
     <div class=" ">19</div>
     <div class=" ">20</div>
