@@ -41,7 +41,3 @@
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 0 50px 50px 0;
   }
-  /* Убираем тень при наведении */
-  .heart:hover:before, .heart:hover{
-      
-  }
