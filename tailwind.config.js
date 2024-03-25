@@ -4,8 +4,9 @@ module.exports = {
   theme: {
   colors: {
     darkbrown: '#5b4f47',
+    daksand: '#c9b7a9',
     sand: '#d6c4b5',
-    lighsand: '#e2d3bf',
+    lightsand: '#e2d3bf',
     brown: '#997c54',
     rose: '#fec4d2'
     },
