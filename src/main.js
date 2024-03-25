@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-let scrollTransition = document.querySelector('#scroll-transition')
+let scrollTransition = document.querySelector('.scroll-transition')
 console.log(scrollTransition)
 
 scrollTransition.classList.remove('animate-opacity')
@@ -14,13 +14,13 @@ const observer = new IntersectionObserver(entries => {
         scrollTransition.classList.remove('animate-opacity');
     })
 })
-observer.observe(document.querySelector('#scroll-wrapper'))
+observer.observe(document.querySelector('.scroll-wrapper'))
     
 function timer(id, deadline) {
 
 	function getTimeRemaining(endtime) {
 		let days, hours, minutes, seconds;
-		const t = Date.parse(endtime) - Date.parse(new Date());
+		const t = Date.parse(endtime) - Date.parse(new Date(dateString.replace()));
 
 		if (t <= 0) {
 			days = 0;
@@ -78,6 +78,6 @@ function timer(id, deadline) {
 	setClock(id, deadline);
 }
 
-timer(".timer", "2024.08.18");
+timer(".timer", "2024-08-18");
 
 });
