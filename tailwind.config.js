@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+  colors: {
+    darkbrown: '#5b4f47',
+    sand: '#d6c4b5',
+    lighsand: '#e2d3bf',
+    brown: '#997c54',
+    rose: '#fec4d2'
+    },
+
     extend: {
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
