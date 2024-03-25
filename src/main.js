@@ -81,6 +81,7 @@ function timer(id, deadline) {
 timer(".timer", "2024-08-18");
 
 let tel = document.querySelector("#tel")
+const sbmButton = document.querySelector("#sbmButton");
 const validMessage = document.createElement("p");
 validMessage.innerHTML = 'Некоректный номер';
 validMessage.className = 'text-sm text-red-900'
@@ -93,13 +94,20 @@ function hideValidMessage() {
 	validMessage.remove()
 }
 
+
 function validTel () {
 	const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 	valid = re.test(tel.value);
 	if (valid) {
 	hideValidMessage();
+	sbmButton.removeAttribute('disabled', '');
+	sbmButton.classList.add('bg-indigo-600');
+	sbmButton.classList.remove('bg-indigo-500') 
 	} else {
 		showValidMessage()
+		sbmButton.setAttribute("disabled", '');
+		sbmButton.classList.remove('bg-indigo-600');
+		sbmButton.classList.add('bg-indigo-500') 
 	}
 	}
 
@@ -113,6 +121,8 @@ function validTel () {
 		tel.addEventListener('focusout', (e) => validTel());
 	} else {
 	showValidMessage() 
+	sbmButton.classList.remove('bg-indigo-600');
+	sbmButton.classList.add('bg-indigo-500') 
 	console.log('3')
 	}
  });
