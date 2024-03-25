@@ -9,33 +9,37 @@
 
 </head>
 <body class="h-full">
-  <div class="first-section">
-      <img class="h-auto max-w-full" src="https://wedinvent.ru/css/time_to_travel_002/img/bg-first.jpg" alt="">
-  </div>
+  <section class="first-section relative">
+    <div class="brightness-50">
+      <div class="h-72 w-full bg-cover bg-center bg-no-repeat bg-[url(img/banner.png)]">
+    </div>
+      </div>
+    <p class="text-white text-xl absolute top-1/2 left-1/2">Че</p>
+    </section>
 
   <div class="timer-section flex flex-col justify-center items-center text-center  px-2 mt-5 lg:px-8" >
   <h2 class="font-bold text-3xl lg:text-5xl">До начала свадьбы</h2>
   <div class="timer grid grid-flow-col lg:gap-5 justify-center text-center auto-cols-max text-xs gap-1 mt-5 lg:text-xl lg:mt-10">
     <div class="timer__block flex flex-col p-2">
-      <span class="bg-red-100 rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
+      <span class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
         <span id="days" class="">00</span>
       </span>
       Дней
     </div> 
     <div class="timer__block flex flex-col p-2">
-      <span id="hours" class="bg-red-100 rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
+      <span id="hours" class="bg-[#5b4f47] text-[#e2d3bf]  rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
         <span>00</span>
       </span>
       Часов
     </div> 
     <div class="timer__block flex flex-col p-2">
-      <span id="minutes" class="bg-red-100 rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
+      <span id="minutes" class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
         <span>00</span>
       </span>
       Минут
     </div> 
     <div class="timer__block flex flex-col p-2">
-      <span id="seconds" class="bg-red-100 rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
+      <span id="seconds" class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
         <span>00</span>
       </span>
       Секунд
@@ -128,7 +132,7 @@
   <div>
       <img class="h-auto max-w-full rounded-lg" src="img/colors.png" alt="">
   </div>
-  <div class="grid grid-cols-1 gap-4 lg:grid-cols-5">
+  <div class="grid grid-cols-1 gap-4">
       <div>
           <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1669301519289-b932696dfce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
       </div>
@@ -165,14 +169,14 @@
             <div>
               <label for="text" class="block text-xl leading-6 text-gray-900">Ваше ФИО</label>
               <div class="mt-2">
-                <input id="text" name="name" type="text" autocomplete="text" required class="block w-full rounded-md border-2 border-red-300 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input id="text" name="name" type="text" autocomplete="text" required class="block w-full rounded-md border-1 border-[#d6c4b5] p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
             <div>
               <label for="text" class="block text-xl leading-6 text-gray-900">Номер телефона</label>
               <div class="mt-2">
-                <input id="phone" name="phone" type="tel" autocomplete="text" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="8 800-555-35-35" required class="block w-full rounded-md border-2 border-red-300 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input value="" id="tel" name="tel" type="tel" autocomplete="text" placeholder="8 800-555-35-35" required class="block w-full rounded-md border-1 border-[#d6c4b5] p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 

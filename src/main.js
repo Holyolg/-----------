@@ -80,4 +80,41 @@ function timer(id, deadline) {
 
 timer(".timer", "2024-08-18");
 
+let tel = document.querySelector("#tel")
+const validMessage = document.createElement("p");
+validMessage.innerHTML = 'Некоректный номер';
+validMessage.className = 'text-sm text-red-900'
+
+function showValidMessage() {
+	tel.after(validMessage)
+}
+
+function hideValidMessage() {
+	validMessage.remove()
+}
+
+function validTel () {
+	const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+	valid = re.test(tel.value);
+	if (valid) {
+	hideValidMessage();
+	} else {
+		showValidMessage()
+	}
+	}
+
+ tel.addEventListener('keyup', function(e) {
+	if (tel.value.length >= 10) {
+		validTel();
+		console.log('1')
+	} else if (tel.value == +tel.value) {
+		hideValidMessage()
+		console.log('2');
+		tel.addEventListener('focusout', (e) => validTel());
+	} else {
+	showValidMessage() 
+	console.log('3')
+	}
+ });
+
 });
