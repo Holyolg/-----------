@@ -1,4 +1,9 @@
 {
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
   "scripts": {
     "run": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },

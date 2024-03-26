@@ -1,21 +1,48 @@
+// import { gsap } from "gsap";
+    
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+// gsap.registerPlugin(ScrollTrigger);
+
+
 document.addEventListener("DOMContentLoaded", function(){
 
-let scrollWrapper = document.querySelectorAll('.scroll-wrapper')	
-let scrollTransition = document.querySelectorAll('.scroll-transition')
-console.log(scrollTransition)
+	let tl = gsap.timeline({scrollTrigger: {
+		trigger: '.first-screen',
+		scrubs: true
+	}});
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-		console.log(entry)
-        if (entry.isIntersecting) {
-			console.log('1')
-            entry.target.classList.add('animate-opacity');
-            return;
-        }
-        entry.target.classList.remove('animate-opacity');
-    })
-})
-	scrollTransition.forEach(elem => observer.observe(elem))
+	tl.from('.first-screen', {y: 20, opacity: 0})
+	.from('.timer-section', {y: 20, opacity: 0})
+	.from('.text-section__one', {y: 20, opacity: 0})
+	.from('.calendar-section', {y: 20, opacity: 0})
+	.from('.text-section__two', {y: 20, opacity: 0})
+
+
+	tl.to('.first-screen', {y: 0, opacity: 1})
+	.to('.timer-section', {y: 0, opacity: 1})
+	.to('.text-section__one', {y: 0, opacity: 1})
+	.to('.calendar-section', {y: 0, opacity: 1})
+	.to('.text-section__two', {scrollTrigger: '.text-section__two', y: 0, opacity: 1})
+	
+
+// let scrollWrapper = document.querySelectorAll('.scroll-wrapper')	
+// let scrollTransition = document.querySelectorAll('.scroll-transition')
+// console.log(scrollTransition)
+
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+// 		console.log(entry)
+//         if (entry.isIntersecting) {
+// 			console.log('1')
+//             entry.target.classList.add('animate-opacity');
+//             return;
+//         }
+//         entry.target.classList.remove('animate-opacity');
+//     })
+// })
+// 	scrollTransition.forEach(elem => observer.observe(elem))
 
 
 
