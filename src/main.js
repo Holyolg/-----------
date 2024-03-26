@@ -1,21 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-let scrollTransition = document.querySelector('.scroll-transition')
+let scrollWrapper = document.querySelectorAll('.scroll-wrapper')	
+let scrollTransition = document.querySelectorAll('.scroll-transition')
 console.log(scrollTransition)
-
-scrollTransition.classList.remove('animate-opacity')
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+		console.log(entry)
         if (entry.isIntersecting) {
-            scrollTransition.classList.add('animate-opacity');
+			console.log('1')
+            entry.target.classList.add('animate-opacity');
             return;
         }
-        scrollTransition.classList.remove('animate-opacity');
+        entry.target.classList.remove('animate-opacity');
     })
 })
-observer.observe(document.querySelector('.scroll-wrapper'))
-    
+	scrollTransition.forEach(elem => observer.observe(elem))
+
+
+
 function timer(id, deadline) {
 
 	function getTimeRemaining(endtime) {

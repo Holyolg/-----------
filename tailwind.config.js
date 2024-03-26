@@ -18,11 +18,18 @@ module.exports = {
       },
       keyframes: {
         opacity: {
-          '0%': {opacity: '0%'},
-          '100%': {opacity: '100%'}
+          '0%': {
+            opacity: '0%',
+            transform: 'translateY(50px)'
+
+        },
+          '100%': {
+            opacity: '100%',
+            transform: 'translateY(0)'
+          }
       },
       wiggle: {
-        '0%, 100%': { transform: 'rotate(-3deg)' },
+        '0%, 100%': { transform: '' },
         '50%': { transform: 'rotate(3deg)' },
       }
     },

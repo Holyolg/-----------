@@ -552,12 +552,16 @@ video {
   position: relative;
 }
 
-.left-1 {
-  left: 0.25rem;
-}
-
 .left-1\/2 {
   left: 50%;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-2\.5 {
+  left: 0.625rem;
 }
 
 .top-1\/2 {
@@ -578,6 +582,10 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-5 {
@@ -635,10 +643,12 @@ video {
 @keyframes opacity {
   0% {
     opacity: 0%;
+    transform: translateY(50px);
   }
 
   100% {
     opacity: 100%;
+    transform: translateY(0);
   }
 }
 
@@ -709,6 +719,16 @@ video {
   border-color: rgb(214 196 181 / var(--tw-border-opacity));
 }
 
+.bg-\[\#5b4f47\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 79 71 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d6c4b5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 196 181 / var(--tw-bg-opacity));
+}
+
 .bg-indigo-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
@@ -722,20 +742,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#5b4f47\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(91 79 71 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#\#5b4f47\] {
-  background-color: ##5b4f47;
-}
-
-.bg-\[\#d6c4b5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(214 196 181 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(img\/banner\.png\)\] {
@@ -764,10 +770,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-2 {
@@ -830,6 +832,11 @@ video {
   letter-spacing: -0.025em;
 }
 
+.text-\[\#e2d3bf\] {
+  --tw-text-opacity: 1;
+  color: rgb(226 211 191 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -858,11 +865,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#e2d3bf\] {
-  --tw-text-opacity: 1;
-  color: rgb(226 211 191 / var(--tw-text-opacity));
 }
 
 .opacity-75 {
@@ -1002,9 +1004,15 @@ video {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:left-3 {
+    left: 0.75rem;
+  }
+}
+
 @media (min-width: 1024px) {
-  .lg\:left-2 {
-    left: 0.5rem;
+  .lg\:left-3 {
+    left: 0.75rem;
   }
 
   .lg\:mt-10 {
