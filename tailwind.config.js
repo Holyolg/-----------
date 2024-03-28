@@ -10,6 +10,10 @@ module.exports = {
    // brown: '#997c54',
     //rose: '#fec4d2'
    // },
+    fontFamily: {
+      'sans': ['Montserrat']
+    }
+  },
 
     extend: {
       animation: {
@@ -38,5 +42,5 @@ module.exports = {
     require('@tailwindcss/forms')
   ],
 }
-}
+
 
