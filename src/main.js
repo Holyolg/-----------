@@ -14,17 +14,17 @@ document.addEventListener("DOMContentLoaded", function(){
 	}});
 
 	tl.from('.first-screen', {y: 20, opacity: 0})
-	.from('.timer-section', {y: 20, opacity: 0})
-	.from('.text-section__one', {y: 20, opacity: 0})
-	.from('.calendar-section', {y: 20, opacity: 0})
-	.from('.text-section__two', {y: 20, opacity: 0})
+	//.from('.timer-section', {y: 20, opacity: 0})
+	//.from('.text-section__one', {y: 20, opacity: 0})
+	//.from('.calendar-section', {y: 20, opacity: 0})
+	//.from('.text-section__two', {y: 20, opacity: 0})
 
 
 	tl.to('.first-screen', {y: 0, opacity: 1})
-	.to('.timer-section', {y: 0, opacity: 1})
-	.to('.text-section__one', {y: 0, opacity: 1})
-	.to('.calendar-section', {y: 0, opacity: 1})
-	.to('.text-section__two', {scrollTrigger: '.text-section__two', y: 0, opacity: 1})
+	//.to('.timer-section', {y: 0, opacity: 1})
+	//.to('.text-section__one', {y: 0, opacity: 1})
+	//.to('.calendar-section', {y: 0, opacity: 1})
+	//.to('.text-section__two', {y: 0, opacity: 1})
 	
 
 // let scrollWrapper = document.querySelectorAll('.scroll-wrapper')	
