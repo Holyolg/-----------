@@ -123,7 +123,7 @@
     <iframe class="rounded-lg" src="https://yandex.ru/map-widget/v1/?um=constructor%3A16bb5d76ad99abac65ec5fe7f27ffa878eaeb21c62664b4b2fab2c761d23efb0&amp;source=constructor" width="768" height="512" frameborder="0"></iframe>
   </div>
     <div class="mt-7 mx-auto max-w-sm px-6">
-    <button class="flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]">Маршрут</button>
+    <a class="flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]" href="https://yandex.ru/maps/?ll=41.478427%2C52.779022&mode=routes&rtext=52.721901%2C41.449707~52.823642%2C41.500506&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D201355573132&z=12.6">Маршрут</a>
   </div>
   </div>
 
@@ -131,17 +131,17 @@
   <div class="flex flex-col justify-center items-center">
     <h2 class="font-semibold text-3xl lg:mt-14 lg:text-5xl ">Тайминг</h2>
   </div>
-    <ol class="text-xl mt-5">
-      <li class="scroll-transition">11:00 - Сбор гостей</li>
-      <li class="scroll-transition mt-5">13:00 - Церемония</li>
-      <li class="scroll-transition mt-5">15:00 - Бегит</li>
-      <li class="scroll-transition mt-5">17:00 - Анджуманя</li>
+    <ol class="mt-5">
+      <li class="scroll-transition">14:30 - Трансфер</li>
+      <li class="scroll-transition mt-5">15:00 - Сбор гостей</li>
+      <li class="scroll-transition mt-5">15:30 - Начало церемонии</li>
+      <li class="scroll-transition mt-5">16:00 - Начало банкета</li>
     </ol>
 </div>
 
 <div class="color-section flex flex-col justify-center items-center text-center px-2 mt-10 lg:px-8">
     <h2 class="font-semibold text-3xl lg:mt-14 lg:text-5xl">Дресс-код</h2>
-    <p class="max-w-md mt-2 lg:text-xl lg:mt-5">ы</p>
+    <p class="max-w-md mt-2 lg:text-xl lg:mt-5"></p>
 
 <div class="grid gap-4 max-w-screen-md mt-5 lg:mt-14">
   <div>
@@ -203,6 +203,16 @@
             <div>
               <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="no" name="willCome" value="no"/>
               <label>Нет</label>
+            </div>
+
+            <label for="text" class="block text-xl leading-6 ">На чем будете добираться?</label>
+            <div>
+              <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="transfer"/>
+              <label>На трансфере</label>
+            </div>
+            <div>
+              <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="own"/>
+              <label>Своим ходом</label>
             </div>
 
             <label for="text" class="block text-xl leading-6 ">Что предпочитаете из напитков?</label>
