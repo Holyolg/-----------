@@ -191,6 +191,7 @@ function validTel () {
 	direction: 'horizontal',
 	loop: true,
 	effect: 'cards',
+	centeredSlides: true,
   
 	// If we need pagination
 	pagination: {
