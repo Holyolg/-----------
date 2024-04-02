@@ -45,6 +45,22 @@ document.addEventListener("DOMContentLoaded", function(){
 // 	scrollTransition.forEach(elem => observer.observe(elem))
 
 
+function getNoun(number, one, two, five) {
+    let n = Math.abs(number);
+    n %= 100;
+    if (n >= 5 && n <= 20) {
+      return five;
+    }
+    n %= 10;
+    if (n === 1) {
+      return one;
+    }
+    if (n >= 2 && n <= 4) {
+      return two;
+    }
+    return five;
+  }
+
 
 function timer(id, deadline) {
 
@@ -86,6 +102,11 @@ function timer(id, deadline) {
 			hours = timer.querySelector('#hours'),
 			minutes = timer.querySelector('#minutes'),
 			seconds = timer.querySelector('#seconds'),
+			textDays = timer.querySelector('#text_days'),
+			textHours = timer.querySelector('#text_hours'),
+			textMinutes = timer.querySelector('#text_minutes'),
+			textSeconds = timer.querySelector('#text_seconds');
+
 			timeInterval = setInterval(updateClock, 1000);
 
 		updateClock();
@@ -93,11 +114,16 @@ function timer(id, deadline) {
 		function updateClock() {
 			const t = getTimeRemaining(endtime);
 
-			days.innerHTML = getZero(t.days);
-			hours.innerHTML = getZero(t.hours);
-			minutes.innerHTML = getZero(t.minutes);
-			seconds.innerHTML = getZero(t.seconds);
+			let daysUpdate = days.innerHTML = getZero(t.days);
+			let hoursUpdate = hours.innerHTML = getZero(t.hours);
+			let minutesUpdate = minutes.innerHTML = getZero(t.minutes);
+			let secondsUpdate = seconds.innerHTML = getZero(t.seconds);
 
+			textDays.innerHTML = getNoun (daysUpdate, "день", "дня", "дней");
+			textHours.innerHTML = getNoun (hoursUpdate, "час", "часа", "часов");
+			textMinutes.innerHTML = getNoun (minutesUpdate, "минута", "минуты", "минут");
+			textSeconds.innerHTML = getNoun (secondsUpdate, "секунда", "секунды", "секунд");
+			
 			if (t.total <= 0) {
 				clearInterval(timeInterval);
 			}
@@ -105,10 +131,13 @@ function timer(id, deadline) {
 
 	}
 
+	
+
 	setClock(id, deadline);
 }
 
 timer(".timer", "2024-08-18");
+
 
 let tel = document.querySelector("#tel")
 const sbmButton = document.querySelector("#sbmButton");
