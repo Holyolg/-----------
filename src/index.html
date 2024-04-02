@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Wedding</title>
 
 </head>
@@ -169,30 +169,67 @@
     <h2 class="font-semibold text-3xl lg:mt-20 lg:text-5xl">Дресс-код</h2>
     <p class="max-w-md mt-2 lg:text-xl lg:mt-5"></p>
 
-<div class="grid gap-4 max-w-screen-md mt-5 lg:mt-20">
+<div class="max-w-screen-md mt-5 lg:mt-20">
   <div>
       <img class="h-auto max-w-full rounded-lg" src="img/colors.png" alt="">
   </div>
-  <div class="grid grid-cols-1 gap-4">
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1669301519289-b932696dfce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      </div>
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1529636798458-92182e662485?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      </div>
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1485700281629-290c5a704409?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      </div>
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      </div>
-      <div>
-          <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1515626553181-0f218cb03f14?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      </div>
-  </div>
 </div>
   </div>
 </div>
+
+
+<!-- Slider main container -->
+<div class="swiper h-96 w-2/3 mt-10">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_1.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_2.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_3.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_4.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_5.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_6.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_7.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_8.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_9.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_10.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_11.JPG" alt="">
+    </div>
+    <div class="swiper-slide rounded-lg">
+      <img class="" src="img/slider/slider_12.JPG" alt="">
+    </div>
+
+
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination swiper-pagination-white"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
+</div>
+
 
 <section class="gift-section flex flex-col justify-center items-center text-center px-2 mt-20 lg:px-8">
   <h2 class="font-semibold text-3xl lg:mt-20 lg:text-5xl">Цветы</h2>
@@ -282,8 +319,11 @@
         <a class="opacity-85 mt-8 h-20 w-20 bg-local bg-center bg-contain bg-no-repeat" style="background-image: url(img/icons8-telegram.svg)" href='https://t.me/+nCIgHBbkKnY0YWMy' ></a>
       </section>
       
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
 
     </body>
 
