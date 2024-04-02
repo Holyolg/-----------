@@ -139,9 +139,6 @@ function timer(id, deadline) {
 timer(".timer", "2024-08-18");
 
 
-
-
-
 let tel = document.querySelector("#tel")
 const sbmButton = document.querySelector("#sbmButton");
 const validMessage = document.createElement("p");
