@@ -14,17 +14,9 @@ document.addEventListener("DOMContentLoaded", function(){
 			start: 'top center',
 			scrubs: true
 	}});
-
-	// tl.from('.first-screen', {
-	// 	y: 20, 
-	// 	opacity: 0,
-	// 	duration: 1
-
-	// })
 	
 	tl.from('.time-section_wrapper', { 
 		opacity: 0,
-		duration: 1
 	})
 	.from('.time-section_first', {
 		y: 20, 
@@ -42,24 +34,74 @@ document.addEventListener("DOMContentLoaded", function(){
 		y: 20, 
 		opacity: 0
 	})
-	//.from('.text-section__one', {y: 20, opacity: 0})
-	//.from('.calendar-section', {y: 20, opacity: 0})
-	//.from('.text-section__two', {y: 20, opacity: 0})
-
-
-	// tl.to('.first-screen', {
-	// 	y: 0, 
-	// 	opacity: 0,
-	// })
-	// tl.to('.time-section', {
-	// 	y: 0, 
-	// 	opacity: 1
-	// })
-	//.to('.text-section__one', {y: 0, opacity: 1})
-	//.to('.calendar-section', {y: 0, opacity: 1})
-	//.to('.text-section__two', {y: 0, opacity: 1})
 	
+	let heroTl = gsap.timeline({
+		scrollTrigger: {
+			trigger: '.hero-section',
+			scrubs: true
+	}});
 
+	heroTl.from('.first-screen', { 
+		opacity: 0,
+		y: 40,
+	})
+	heroTl.from('.timer__block', { 
+		opacity: 0,
+		y: 40,
+	})
+	heroTl.from('.nav-arrow', { 
+		opacity: 0,
+	})
+	
+	let mapTl = gsap.timeline({
+		scrollTrigger: {
+			trigger: '.text-section__two',
+			start: 'top center',
+			scrubs: true
+	}});
+	mapTl.from('.map', {
+		opacity: 0,
+		y: 40,
+	})
+
+	mapTl.from('.map__btn', {
+		opacity: 0,
+		y: 40,
+	})
+
+let colorsTl = gsap.timeline({
+	scrollTrigger: {
+		trigger: '.colors-section',
+		start: 'top center',
+		scrubs: true,
+		}, 
+	});
+colorsTl
+.from('.color-first', {
+	opacity: 0,
+	duration: 0.5
+
+})
+.from('.color-second', {
+	opacity: 0,
+	duration: 0.5
+
+})
+.from('.color-third', {
+	opacity: 0,
+	duration: 0.5
+
+})
+.from('.color-fourth', {
+	opacity: 0,
+	duration: 0.5
+
+})
+.from('.color-fives', {
+	opacity: 0,
+	duration: 0.5
+
+})
 // let scrollWrapper = document.querySelectorAll('.scroll-wrapper')	
 // let scrollTransition = document.querySelectorAll('.scroll-transition')
 // console.log(scrollTransition)

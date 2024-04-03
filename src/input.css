@@ -6,7 +6,7 @@
     position: relative;
     z-index: 1;
 };
-  .map-section__map {
+  .map {
     @media (min-width:1024px) {
       max-width: 100%;
     }

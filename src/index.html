@@ -16,7 +16,7 @@
 
 </head>
 <body class="h-full bg-[#fff9f1] text-[#413329]">
-  <section class="first-section relative h-full w-full">
+  <section class="hero-section relative h-full w-full">
     <div class="h-full">
       <div class="brightness-50 h-full w-full bg-local bg-center bg-cover" style="background-image: url(img/hero\ 0.png);">  
       </div>
@@ -48,7 +48,7 @@
           <span id="text_seconds">Секунд</span>
         </div>
       </div>
-      <div class="animate-bounce mx-auto mt-10 bg-[#5b4f47] p-2 w-10 h-10 shadow-lg rounded-full flex items-center justify-center">
+      <div class="nav-arrow animate-bounce mx-auto mt-10 bg-[#5b4f47] p-2 w-10 h-10 shadow-lg rounded-full flex items-center justify-center">
         <svg class="w-6 h-6 text-[#e2d3bf]" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
@@ -126,10 +126,10 @@
   <p class="text-gray-500 max-w-md mt-2 lg:text-xl lg:mt-5">Будем ждать вас по адресу: Тамбовский район, Татановский сельсовет, турбаза "Авиатор"</p>
 </div>
 
-  <div class=" map-section__map mt-5 flex justify-center">
+  <div class="map mt-5 flex justify-center">
     <iframe class="rounded-lg" src="https://yandex.ru/map-widget/v1/?um=constructor%3A16bb5d76ad99abac65ec5fe7f27ffa878eaeb21c62664b4b2fab2c761d23efb0&amp;source=constructor" width="768" height="480" frameborder="0"></iframe>
   </div>
-    <div class="mt-7 mx-auto max-w-sm px-6">
+    <div class="map__btn mt-7 mx-auto max-w-sm px-6">
     <a class="flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]" href="https://yandex.ru/maps/?ll=41.478427%2C52.779022&mode=routes&rtext=52.721901%2C41.449707~52.823642%2C41.500506&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D201355573132&z=12.6">Маршрут</a>
   </div>
   </div>
@@ -176,9 +176,23 @@
     <h2 class="font-semibold text-3xl lg:mt-18 lg:text-5xl">Дресс-код</h2>
     <p class="max-w-md mt-2 lg:text-xl lg:mt-5"></p>
 
-<div class="max-w-screen-md mt-5 lg:mt-8">
-  <div>
-      <img class="h-auto max-w-full px-16 lg:px-40" src="img/colors.png" alt="">
+<div class="colors-section max-w-screen-md mt-5 lg:mt-8">
+  <div class="colors grid grid-cols-5 gap-x-3">
+    <svg class="color-first" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="40" cy="40" r="40" fill="#5C4F47"/>
+      </svg>   
+      <svg class="color-second" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="40" fill="#D8C4B6"/>
+        </svg>  
+        <svg class="color-third" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="40" fill="#E4D3C0"/>
+          </svg>     
+          <svg class="color-fourth" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="40" fill="#9C7B56"/>
+            </svg>  
+            <svg class="color-fives" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="40" fill="#FFC3D2"/>
+              </svg>   
   </div>
 </div>
 </div>
@@ -237,7 +251,7 @@
 </div>
 </div>
 
-<section class="gift-section flex flex-col justify-center items-center text-center px-2 mt-1 lg:px-8">
+<section class="gift-section flex flex-col justify-center items-center text-center px-2 mt-20 lg:px-8">
   <h2 class="font-semibold text-3xl lg:mt-20 lg:text-5xl">Цветы</h2>
   <p class="max-w-md mt-2 lg:text-xl lg:mt-5 text-gray-500">Пожалуйста, не дарите нам цветы, так как мы не успеем насладиться их красотой до отъезда в свадебное путешествие. <br> Если вы хотите сделать нам комплимент, замените букет бутылкой вина, книгой или букетом не из цветов.</p>
   <div class="heart-container mt-5 h-20 w-20 bg-local bg-center bg-contain bg-no-repeat" style="background-image: url(img/free-icon-bouquet-1958392.png)">
