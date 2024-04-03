@@ -8,20 +8,53 @@
 
 document.addEventListener("DOMContentLoaded", function(){
 
-	let tl = gsap.timeline({scrollTrigger: {
-		trigger: '.first-screen',
-		scrubs: true
+	let tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: '.time-section',
+			start: 'top center',
+			scrubs: true
 	}});
 
-	tl.from('.first-screen', {y: 20, opacity: 0})
-	//.from('.timer-section', {y: 20, opacity: 0})
+	// tl.from('.first-screen', {
+	// 	y: 20, 
+	// 	opacity: 0,
+	// 	duration: 1
+
+	// })
+	
+	tl.from('.time-section_wrapper', { 
+		opacity: 0,
+		duration: 1
+	})
+	.from('.time-section_first', {
+		y: 20, 
+		opacity: 0
+	})
+	.from('.time-section_second', {
+		y: 20, 
+		opacity: 0
+	})
+	.from('.time-section_third', {
+		y: 20, 
+		opacity: 0
+	})
+	.from('.time-section_fourth', {
+		y: 20, 
+		opacity: 0
+	})
 	//.from('.text-section__one', {y: 20, opacity: 0})
 	//.from('.calendar-section', {y: 20, opacity: 0})
 	//.from('.text-section__two', {y: 20, opacity: 0})
 
 
-	tl.to('.first-screen', {y: 0, opacity: 1})
-	//.to('.timer-section', {y: 0, opacity: 1})
+	// tl.to('.first-screen', {
+	// 	y: 0, 
+	// 	opacity: 0,
+	// })
+	// tl.to('.time-section', {
+	// 	y: 0, 
+	// 	opacity: 1
+	// })
 	//.to('.text-section__one', {y: 0, opacity: 1})
 	//.to('.calendar-section', {y: 0, opacity: 1})
 	//.to('.text-section__two', {y: 0, opacity: 1})
