@@ -264,7 +264,7 @@
         </div>
       
         <div class="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form class="pageclip-form space-y-10" action="https://send.pageclip.co/LuR2rCadNhBlCKbeLWN3aRBiEAQRySsK/Wedding" method="post">
+          <form class="pageclip-form space-y-10" action="https://send.pageclip.co/AGJYIEGqpdx9xCSEnkBKzMcd9JQVfm5F/Wedding" class="pageclip-form" method="post">
             <div>
               <label for="text" class="block text-xl leading-6 ">Ваше ФИО</label>
               <div class="mt-2">
@@ -288,38 +288,41 @@
               <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="no" name="willCome" value="no"/>
               <label>Нет</label>
             </div>
-
-            <label for="text" class="block text-xl leading-6 ">На чем будете добираться?</label>
-            <div>
+            
+            <div class="hovered-input">
+            <label for="text" class="block text-xl leading-6">На чем будете добираться?</label>
+            <div class="mt-10">
               <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="transfer"/>
               <label>На трансфере</label>
             </div>
-            <div>
+            <div class="mt-10">
               <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="own"/>
               <label>Своим ходом</label>
             </div>
-
-            <label for="text" class="block text-xl leading-6 ">Что предпочитаете из напитков?</label>
-            <div>
+          
+            <label for="text" class="block text-xl leading-6 mt-10">Что предпочитаете из напитков?</label>
+            <div class="mt-10">
               <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="whiteVine" name="drinks" value="whiteVine" />
               <label>Белое вино</label>
             </div>
-            <div>
+            <div class="mt-10">
               <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="redVine" name="drinks" value="redVine"  />
               <label>Красное вино</label>
             </div>
-            <div>
+            <div class="mt-10">
               <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="vodka" name="drinks" value="vodka"  />
               <label>Водка</label>
             </div>
-            <div>
+            <div class="mt-10">
               <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="shampane" name="drinks" value="shampane"  />
               <label>Шампанское</label>
             </div>
-            <div>
+            <div class="mt-10">
               <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="notDrinks" name="drinks" value="notDrinks" checked/>
               <label>Не пью</label>
             </div>
+          </div>
+
             <div>
               <button type="submit" id="sbmButton" class="pageclip-form__submit flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]">Отправить</button>
             </div>
@@ -344,11 +347,11 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+      <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 
     </body>
 
     <script src="main.js"></script>
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
     </html>

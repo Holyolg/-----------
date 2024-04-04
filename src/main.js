@@ -281,4 +281,23 @@ function validTel () {
 
   });
 
+  let noSelect = document.querySelector('#no')
+  let yesSelect = document.querySelector('#yes');
+  let hoveredInput = document.querySelector('.hovered-input');
+  console.log(hoveredInput)
+
+  function isSelected () {
+	if (noSelect.checked == true) {
+		hoveredInput.innerHTML = '';
+	} else if (yesSelect.checked == true) {
+		hoveredInput.innerHTML = '<div><label for="text" class="block text-xl leading-6">На чем будете добираться?</label><div class="mt-10"><input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="transfer"/><label>На трансфере</label></div><div class="mt-10"><input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="own"/><label>Своим ходом</label></div><label for="text" class="block text-xl leading-6 mt-10">Что предпочитаете из напитков?</label><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="whiteVine" name="drinks" value="whiteVine" /><label>Белое вино</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="redVine" name="drinks" value="redVine"  /><label>Красное вино</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="vodka" name="drinks" value="vodka"  /><label>Водка</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="shampane" name="drinks" value="shampane"  /><label>Шампанское</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="notDrinks" name="drinks" value="notDrinks" checked/><label>Не пью</label></div>';
+	}
+  }
+
+  noSelect.addEventListener('click', () => isSelected())
+  yesSelect.addEventListener('click', () => isSelected())
+
+
+
+
 });
