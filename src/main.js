@@ -235,13 +235,13 @@ function validTel () {
 	if (valid) {
 	hideValidMessage();
 	sbmButton.removeAttribute('disabled', '');
-	sbmButton.classList.add('bg-indigo-600');
-	sbmButton.classList.remove('bg-indigo-500') 
+	sbmButton.classList.add('bg-[#5b4f47]');
+	sbmButton.classList.remove('bg-[#89807a]') 
 	} else {
 		showValidMessage()
 		sbmButton.setAttribute("disabled", '');
-		sbmButton.classList.remove('bg-indigo-600');
-		sbmButton.classList.add('bg-indigo-500') 
+		sbmButton.classList.remove('bg-[#5b4f47]');
+		sbmButton.classList.add('bg-[#89807a]') 
 	}
 	}
 
@@ -255,8 +255,8 @@ function validTel () {
 		tel.addEventListener('focusout', (e) => validTel());
 	} else {
 	showValidMessage() 
-	sbmButton.classList.remove('bg-indigo-600');
-	sbmButton.classList.add('bg-indigo-500') 
+	sbmButton.classList.remove('bg-[#5b4f47]');
+	sbmButton.classList.add('bg-[#89807a]') 
 	console.log('3')
 	}
  });
