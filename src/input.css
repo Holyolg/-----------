@@ -17,3 +17,8 @@
 .swiper-pagination-bullet-active {
   background-color: white !important;
 }
+.hovered-input {
+  transition-duration: 5s;
+  opacity: 1;
+  transition-timing-function: ease-in-out;
+}
