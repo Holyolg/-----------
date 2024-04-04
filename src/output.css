@@ -946,6 +946,22 @@ select {
   width: 100%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.min-w-\[\#350px\] {
+  min-width: #350px;
+}
+
+.min-w-\[350px\] {
+  min-width: 350px;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
