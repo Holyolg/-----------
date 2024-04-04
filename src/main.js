@@ -79,27 +79,27 @@ let colorsTl = gsap.timeline({
 colorsTl
 .from('.color-first', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-second', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-third', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-fourth', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-fives', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 // let scrollWrapper = document.querySelectorAll('.scroll-wrapper')	
