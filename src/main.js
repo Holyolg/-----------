@@ -307,6 +307,9 @@ function validTel () {
   yesSelect.addEventListener('click', () => isSelected())
 
 
+let arrow = document.querySelector('.nav-arrow')
+let calendar = document.querySelector('.calendar-section__nav ');
 
+arrow.addEventListener('click', () => calendar.scrollIntoView({behavior: 'smooth'}))
 
 });
