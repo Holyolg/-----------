@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function(){
 		y: 20, 
 		opacity: 0
 	})
+	.from('.time-section_six', {
+		y: 20, 
+		opacity: 0
+	})
 	
 	let heroTl = gsap.timeline({
 		scrollTrigger: {
