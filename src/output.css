@@ -1438,6 +1438,10 @@ select {
     right: 24rem;
   }
 
+  .lg\:left-1\/4 {
+    left: 25%;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1502,11 +1506,47 @@ select {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:left-\[46\%\] {
+    left: 46%;
+  }
+
+  .\32xl\:right-\[45\%\] {
+    right: 45%;
+  }
+
+  .\32xl\:left-\[42\%\] {
+    left: 42%;
+  }
+
+  .\32xl\:left-\[43\%\] {
+    left: 43%;
+  }
+
+  .\32xl\:left-\[44\%\] {
+    left: 44%;
+  }
+
   .\32xl\:left-\[40\%\] {
     left: 40%;
   }
 
-  .\32xl\:right-\[40\%\] {
-    right: 40%;
+  .\32xl\:left-\[45\%\] {
+    left: 45%;
+  }
+
+  .\32xl\:left-\[35\%\] {
+    left: 35%;
+  }
+
+  .\32xl\:left-\[36\%\] {
+    left: 36%;
+  }
+
+  .\32xl\:right-\[36\%\] {
+    right: 36%;
+  }
+
+  .\32xl\:right-\[35\%\] {
+    right: 35%;
   }
 }
