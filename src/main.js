@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function(){
 		y: 20, 
 		opacity: 0
 	})
+	.from('.time-section_six', {
+		y: 20, 
+		opacity: 0
+	})
 	
 	let heroTl = gsap.timeline({
 		scrollTrigger: {
@@ -79,27 +83,27 @@ let colorsTl = gsap.timeline({
 colorsTl
 .from('.color-first', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-second', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-third', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-fourth', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 .from('.color-fives', {
 	opacity: 0,
-	duration: 0.5
+	duration: 0.3
 
 })
 // let scrollWrapper = document.querySelectorAll('.scroll-wrapper')	
@@ -235,13 +239,13 @@ function validTel () {
 	if (valid) {
 	hideValidMessage();
 	sbmButton.removeAttribute('disabled', '');
-	sbmButton.classList.add('bg-indigo-600');
-	sbmButton.classList.remove('bg-indigo-500') 
+	sbmButton.classList.add('bg-[#5b4f47]');
+	sbmButton.classList.remove('bg-[#89807a]') 
 	} else {
 		showValidMessage()
 		sbmButton.setAttribute("disabled", '');
-		sbmButton.classList.remove('bg-indigo-600');
-		sbmButton.classList.add('bg-indigo-500') 
+		sbmButton.classList.remove('bg-[#5b4f47]');
+		sbmButton.classList.add('bg-[#89807a]') 
 	}
 	}
 
@@ -255,8 +259,8 @@ function validTel () {
 		tel.addEventListener('focusout', (e) => validTel());
 	} else {
 	showValidMessage() 
-	sbmButton.classList.remove('bg-indigo-600');
-	sbmButton.classList.add('bg-indigo-500') 
+	sbmButton.classList.remove('bg-[#5b4f47]');
+	sbmButton.classList.add('bg-[#89807a]') 
 	console.log('3')
 	}
  });
@@ -280,5 +284,32 @@ function validTel () {
 	},
 
   });
+
+  let noSelect = document.querySelector('#no')
+  let yesSelect = document.querySelector('#yes');
+  let hoveredInput = document.querySelector('.hovered-input');
+  console.log(hoveredInput)
+
+
+  function isSelected () {
+	if (noSelect.checked == true) {
+		hoveredInput.innerHTML = '',
+		hoveredInput.classList.remove('')
+		hoveredInput.classList.add('')
+		} else if (yesSelect.checked == true) {
+		hoveredInput.innerHTML = '<div><label for="text" class="block text-xl leading-6">На чем будете добираться?</label><div class="mt-10"><input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="transfer"/><label class="ml-1">На трансфере</label></div><div class="mt-10"><input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="own"/><label class="ml-1">Своим ходом</label></div><label for="text" class="block text-xl leading-6 mt-10">Что предпочитаете из напитков?</label><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="whiteVine" name="drinks" value="whiteVine" /><label class="ml-1">Белое вино</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="redVine" name="drinks" value="redVine"  /><label class="ml-1">Красное вино</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="vodka" name="drinks" value="vodka"  /><label class="ml-1">Водка</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="shampane" name="drinks" value="shampane"  /><label class="ml-1">Шампанское</label></div><div class="mt-10"><input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" id="notDrinks" name="drinks" value="notDrinks" checked/><label class="ml-1">Не пью</label></div>';
+		hoveredInput.classList.remove('')
+		hoveredInput.classList.add('')
+	}
+  }
+
+  noSelect.addEventListener('click', () => isSelected())
+  yesSelect.addEventListener('click', () => isSelected())
+
+
+let arrow = document.querySelector('.nav-arrow')
+let calendar = document.querySelector('.calendar-section__nav ');
+
+arrow.addEventListener('click', () => calendar.scrollIntoView({behavior: 'smooth'}))
 
 });

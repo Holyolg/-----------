@@ -18,20 +18,29 @@ module.exports = {
     extend: {
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
-        opacity: 'opacity 1s ease-in-out'
+        opacity: 'opacity 1s ease-in-out',
+        hover: 'hover 1s ease-in-out'
       },
       keyframes: {
         opacity: {
           '0%': {
-            opacity: '0%',
-            transform: 'translateY(50px)'
-
+            opacity: '0%'
         },
           '100%': {
-            opacity: '100%',
-            transform: 'translateY(0)'
+            opacity: '100%'
           }
       },
+      hover: {
+        '0%': {
+          opacity: '100%'
+
+      },
+        '100%': {
+          opacity: '0%',
+           transform: 'rotate(3deg)' 
+          }
+        },
+
       wiggle: {
         '0%, 100%': { transform: '' },
         '50%': { transform: 'rotate(3deg)' },
