@@ -221,7 +221,7 @@ timer(".timer", "2024-08-18");
 let tel = document.querySelector("#tel")
 const sbmButton = document.querySelector("#sbmButton");
 const validMessage = document.createElement("p");
-validMessage.innerHTML = 'Некоректный номер';
+validMessage.innerHTML = 'Некорректный номер';
 validMessage.className = 'text-sm text-red-900'
 
 function showValidMessage() {
