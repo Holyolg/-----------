@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 --> 
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./output.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://s.pageclip.co/v1/pageclip.css"
+			media="screen"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="icon" href="favicon.ico" />
+		<!-- 32×32 -->
+		<link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml" />
 
-    <title>Свадьба Маши и Димы</title>
+		<title>Свадьба Маши и Димы</title>
+	</head>
+	<body class="h-full bg-[#fff9f1] text-[#413329]">
+		<section class="hero-section relative h-full w-full">
+			<div class="h-full">
+				<div
+					class="brightness-50 h-full w-full bg-local bg-center bg-cover"
+					style="background-image: url(img/hero.jpg)"
+				></div>
+				<div class="w-full absolute bottom-10">
+					<p
+						class="w-full first-screen text-[#e2d3bf] font-semibold text-center text-4xl"
+					>
+						МАША & ДИМА
+					</p>
+					<div
+						class="timer grid grid-flow-col lg:gap-5 justify-center text-center auto-cols-max text-xs gap-1 mt-5 lg:text-xl lg:mt-10"
+					>
+						<div class="timer__block flex flex-col p-2 text-[#e2d3bf]">
+							<span
+								class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl"
+							>
+								<span id="days" class="">00</span>
+							</span>
+							<span id="text_days">Дней</span>
+						</div>
+						<div class="timer__block flex flex-col p-2 text-[#e2d3bf]">
+							<span
+								id="hours"
+								class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl"
+							>
+								<span>00</span>
+							</span>
+							<span id="text_hours">Часов</span>
+						</div>
+						<div class="timer__block flex flex-col p-2 text-[#e2d3bf]">
+							<span
+								id="minutes"
+								class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl"
+							>
+								<span>00</span>
+							</span>
+							<span id="text_minutes"></span>
+						</div>
+						<div class="timer__block flex flex-col p-2 text-[#e2d3bf]">
+							<span
+								id="seconds"
+								class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl"
+							>
+								<span>00</span>
+							</span>
+							<span id="text_seconds">Секунд</span>
+						</div>
+					</div>
+					<button
+						class="nav-arrow animate-bounce mx-auto mt-10 bg-[#5b4f47] p-2 w-10 h-10 shadow-lg rounded-full flex items-center justify-center"
+					>
+						<svg
+							class="w-6 h-6 text-[#e2d3bf]"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</section>
 
-</head>
-<body class="h-full bg-[#fff9f1] text-[#413329]">
-  <section class="hero-section relative h-full w-full">
-    <div class="h-full">
-      <div class="brightness-50 h-full w-full bg-local bg-center bg-cover" style="background-image: url(img/hero.jpg);">
-      </div>
-      <div class="w-full absolute bottom-10">
-      <p class="w-full first-screen text-[#e2d3bf] font-semibold text-center text-4xl">МАША & ДИМА</p>
-      <div class="timer grid grid-flow-col lg:gap-5 justify-center text-center auto-cols-max text-xs gap-1 mt-5 lg:text-xl lg:mt-10">
-        <div class="timer__block flex flex-col p-2 text-[#e2d3bf]">
-          <span class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
-            <span id="days" class="">00</span>
-          </span>
-          <span id="text_days">Дней</span>
-        </div> 
-        <div class="timer__block flex flex-col p-2 text-[#e2d3bf]" >
-          <span id="hours" class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
-            <span>00</span>
-          </span>
-          <span id="text_hours">Часов</span>
-        </div> 
-        <div class="timer__block flex flex-col p-2 text-[#e2d3bf]">
-          <span id="minutes" class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
-            <span>00</span>
-          </span>
-          <span id="text_minutes"></span>
-        </div> 
-        <div class="timer__block flex flex-col p-2 text-[#e2d3bf]" >
-          <span id="seconds" class="bg-[#5b4f47] text-[#e2d3bf] rounded-lg p-2 text-3xl lg:p-4 lg:text-5xl">
-            <span>00</span>
-          </span>
-          <span id="text_seconds">Секунд</span>
-        </div>
-      </div>
-      <button class="nav-arrow animate-bounce mx-auto mt-10 bg-[#5b4f47] p-2 w-10 h-10 shadow-lg rounded-full flex items-center justify-center">
-        <svg class="w-6 h-6 text-[#e2d3bf]" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
-      </button>
-      </div>
-    </div>
-    </section>
-
-  <!--
+		<!--
     <section class="timer-section flex flex-col justify-center items-center text-center px-2 mt-5 lg:px-8" >
   <h2 class="font-semibold text-3xl lg:text-5xl">До начала свадьбы</h2>
 </section>
@@ -68,297 +107,469 @@
   </div>
 !-->
 
-  <div class="calendar-section  px-2 mt-20 text-3xl text-center font-semibold tracking-tight lg:mt-20 lg:text-5xl relative">Август
-  <div class="calendar-section__nav absolute opacity-70 left-5 -top-7 h-16 w-16 bg-local bg-center bg-contain bg-no-repeat md:left-1/4 xl:left-[33%] 2xl:left-[35%]" style="background-image: url(img/free-icon-olive-branch-12069424.png);"></div>
-  <div class="m-auto max-w-xl mt-3 p-2">
-  <div class='grid grid-cols-7 gap-2 text-gray-500 text-lg'>
-    <div class="text-[#5b4f47]">ПН</div>
-    <div class="text-[#5b4f47]">ВТ</div>
-    <div class="text-[#5b4f47]">СР</div>
-    <div class="text-[#5b4f47]">ЧТ</div>
-    <div class="text-[#5b4f47]">ПТ</div>
-    <div class="text-[#5b4f47]">СБ</div>
-    <div class="text-[#5b4f47]">ВС</div>
-    <div class=" "></div>
-    <div class=" "></div>
-    <div class=" "></div>
-    <div class=" ">1</div>
-    <div class=" ">2</div>
-    <div class=" ">3</div>
-    <div class=" ">4</div>
-    <div class=" ">5</div>
-    <div class=" ">6</div>
-    <div class=" ">7</div>
-    <div class=" ">8</div>
-    <div class=" ">9</div>
-    <div class=" ">10</div>
-    <div class=" ">11</div>
-    <div class=" ">12</div>
-    <div class=" ">13</div>
-    <div class=" ">14</div>
-    <div class=" ">15</div>
-    <div class=" ">16</div>
-    <div class=" ">17</div>
-    <div class="heart-container animate-pulse h-full bg-local bg-center bg-contain bg-no-repeat" style="background-image: url(img/Group.svg);">18
-    </div>
-    <div class=" ">19</div>
-    <div class=" ">20</div>
-    <div class=" ">21</div>
-    <div class=" ">22</div>
-    <div class=" ">23</div>
-    <div class=" ">24</div>
-    <div class=" ">25</div>
-    <div class=" ">26</div>
-    <div class=" ">27</div>
-    <div class=" ">28</div>
-    <div class=" ">29</div>
-    <div class=" ">30</div>
-    <div class=" ">31</div>
-    <div class=""></div>
-  </div>
-</div>
-<div class="absolute opacity-70 rotate-180 right-5 -bottom-9 h-16 w-16 bg-local bg-center bg-contain bg-no-repeat md:right-1/4 xl:right-[33%] 2xl:right-[35%]" style="background-image: url(img/free-icon-olive-branch-12069424.png);"></div>
+		<div
+			class="calendar-section px-2 mt-20 text-3xl text-center font-semibold tracking-tight lg:mt-20 lg:text-5xl relative"
+		>
+			Август
+			<div
+				class="calendar-section__nav absolute opacity-70 left-5 -top-7 h-16 w-16 bg-local bg-center bg-contain bg-no-repeat md:left-1/4 xl:left-[33%] 2xl:left-[35%]"
+				style="background-image: url(img/free-icon-olive-branch-12069424.png)"
+			></div>
+			<div class="m-auto max-w-xl mt-3 p-2">
+				<div class="grid grid-cols-7 gap-2 text-gray-500 text-lg">
+					<div class="text-[#5b4f47]">ПН</div>
+					<div class="text-[#5b4f47]">ВТ</div>
+					<div class="text-[#5b4f47]">СР</div>
+					<div class="text-[#5b4f47]">ЧТ</div>
+					<div class="text-[#5b4f47]">ПТ</div>
+					<div class="text-[#5b4f47]">СБ</div>
+					<div class="text-[#5b4f47]">ВС</div>
+					<div class=" "></div>
+					<div class=" "></div>
+					<div class=" "></div>
+					<div class=" ">1</div>
+					<div class=" ">2</div>
+					<div class=" ">3</div>
+					<div class=" ">4</div>
+					<div class=" ">5</div>
+					<div class=" ">6</div>
+					<div class=" ">7</div>
+					<div class=" ">8</div>
+					<div class=" ">9</div>
+					<div class=" ">10</div>
+					<div class=" ">11</div>
+					<div class=" ">12</div>
+					<div class=" ">13</div>
+					<div class=" ">14</div>
+					<div class=" ">15</div>
+					<div class=" ">16</div>
+					<div class=" ">17</div>
+					<div
+						class="heart-container animate-pulse h-full bg-local bg-center bg-contain bg-no-repeat"
+						style="background-image: url(img/Group.svg)"
+					>
+						18
+					</div>
+					<div class=" ">19</div>
+					<div class=" ">20</div>
+					<div class=" ">21</div>
+					<div class=" ">22</div>
+					<div class=" ">23</div>
+					<div class=" ">24</div>
+					<div class=" ">25</div>
+					<div class=" ">26</div>
+					<div class=" ">27</div>
+					<div class=" ">28</div>
+					<div class=" ">29</div>
+					<div class=" ">30</div>
+					<div class=" ">31</div>
+					<div class=""></div>
+				</div>
+			</div>
+			<div
+				class="absolute opacity-70 rotate-180 right-5 -bottom-9 h-16 w-16 bg-local bg-center bg-contain bg-no-repeat md:right-1/4 xl:right-[33%] 2xl:right-[35%]"
+				style="background-image: url(img/free-icon-olive-branch-12069424.png)"
+			></div>
+		</div>
 
-</div>
+		<div
+			class="text-section__two max-w-xl m-auto flex flex-col justify-center items-center text-center px-2 mt-24 lg:px-8"
+		>
+			<h2 class="font-semibold text-3xl lg:text-5xl">Место проведения</h2>
+			<p class="text-gray-500 max-w-md mt-2 lg:text-xl lg:mt-5">
+				Будем ждать вас по адресу: Тамбовский район, Татановский сельсовет,
+				турбаза "Авиатор"
+			</p>
+		</div>
 
-<div class="text-section__two max-w-xl m-auto flex flex-col justify-center items-center text-center px-2 mt-24 lg:px-8">
-  <h2 class="font-semibold text-3xl lg:text-5xl">Место проведения</h2>
-  <p class="text-gray-500 max-w-md mt-2 lg:text-xl lg:mt-5">Будем ждать вас по адресу: Тамбовский район, Татановский сельсовет, турбаза "Авиатор"</p>
-</div>
+		<div class="map mt-5 flex justify-center">
+			<iframe
+				class="rounded-lg"
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A16bb5d76ad99abac65ec5fe7f27ffa878eaeb21c62664b4b2fab2c761d23efb0&amp;source=constructor"
+				width="768"
+				height="480"
+				frameborder="0"
+			></iframe>
+		</div>
+		<div class="map__btn mt-7 mx-auto max-w-sm px-6">
+			<a
+				class="flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]"
+				href="https://yandex.ru/maps/13/tambov/?ll=41.460627%2C52.721401&mode=routes&rtext=52.721295%2C41.452750~52.823642%2C41.500506&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA1NzEyMxIa0KDQvtGB0YHQuNGPLCDQotCw0LzQsdC-0LIiCg2dzyVCFZviUkI%2C~ymapsbm1%3A%2F%2Forg%3Foid%3D201355573132&z=13.6"
+				>Маршрут</a
+			>
+		</div>
 
-  <div class="map mt-5 flex justify-center">
-    <iframe class="rounded-lg" src="https://yandex.ru/map-widget/v1/?um=constructor%3A16bb5d76ad99abac65ec5fe7f27ffa878eaeb21c62664b4b2fab2c761d23efb0&amp;source=constructor" width="768" height="480" frameborder="0"></iframe>
-  </div>
-    <div class="map__btn mt-7 mx-auto max-w-sm px-6">
-    <a class="flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]" href="https://yandex.ru/maps/13/tambov/?ll=41.460627%2C52.721401&mode=routes&rtext=52.721295%2C41.452750~52.823642%2C41.500506&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA1NzEyMxIa0KDQvtGB0YHQuNGPLCDQotCw0LzQsdC-0LIiCg2dzyVCFZviUkI%2C~ymapsbm1%3A%2F%2Forg%3Foid%3D201355573132&z=13.6">Маршрут</a>
-  </div>
-  </div>
+		<div
+			class="time-section flex flex-col justify-center items-center px-2 mt-20 lg:mt-24 lg:px-8"
+		>
+			<div class="flex flex-col justify-center items-center">
+				<h2 class="font-semibold text-3xl lg:text-5xl">Тайминг</h2>
+			</div>
+			<ol
+				class="time-section_wrapper mt-12 relative border-s border-dashed text-xl text-gray-700 border-[#5b4f47] lg:text-xl"
+			>
+				<li class="time-section_first mb-12 ms-8">
+					<div
+						class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border border-[#5b4f47] bg-[#5b4f47]"
+					></div>
+					<p class="font-semibold">14.30</p>
+					<p class="mb-3 leading-none">Трансфер</p>
+				</li>
+				<li class="time-section_second mb-12 ms-8">
+					<div
+						class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border border-[#5b4f47] bg-[#5b4f47]"
+					></div>
+					<p class="font-semibold">15.00</p>
+					<p class="mb-3 leading-none">Сбор гостей</p>
+				</li>
+				<li class="time-section_third mb-12 ms-8">
+					<div
+						class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border border-[#5b4f47] bg-[#5b4f47]"
+					></div>
+					<p class="font-semibold">15.30</p>
+					<p class="mb-3 leading-none">Начало церемонии</p>
+				</li>
+				<li class="time-section_fourth mb-12 ms-8">
+					<div
+						class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border border-[#5b4f47] bg-[#5b4f47]"
+					></div>
+					<p class="font-semibold">16.00</p>
+					<p class="mb-3 leading-none">Начало банкета</p>
+				</li>
+				<li class="time-section_six mb-0 ms-8">
+					<div
+						class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border border-[#5b4f47] bg-[#5b4f47]"
+					></div>
+					<p class="font-semibold">23.00</p>
+					<p class="mb-3 leading-none">Окончание свадьбы</p>
+				</li>
+			</ol>
+		</div>
 
+		<div
+			class="color-section flex flex-col justify-center items-center text-center px-2 mt-20 lg:mt-24 lg:px-8"
+		>
+			<h2 class="font-semibold text-3xl lg:mt-18 lg:text-5xl">Дресс-код</h2>
+			<p class="max-w-md mt-2 text-gray-500 lg:max-w-lg lg:text-xl lg:mt-5">
+				Мы будем рады, если вы придержитесь данной цветовой палитры
+			</p>
 
-<div class="time-section flex flex-col justify-center items-center px-2 mt-20 lg:mt-24 lg:px-8">
-  <div class="flex flex-col justify-center items-center">
-    <h2 class="font-semibold text-3xl lg:text-5xl ">Тайминг</h2>
-  </div>
-    <ol class="time-section_wrapper mt-12 relative border-s border-dashed text-xl text-gray-700 border-[#5b4f47] lg:text-xl">                  
-      <li class="time-section_first mb-12 ms-8">
-        <div class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border  border-[#5b4f47] bg-[#5b4f47]"></div>
-        <p class="font-semibold">14.30</p>
-        <p class="mb-3 leading-none">Трансфер</p>
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-    </svg></a>
-  </li>
-    <li class="time-section_second mb-12 ms-8">
-      <div class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border  border-[#5b4f47] bg-[#5b4f47]"></div>
-      <p class="font-semibold">15.00</p>
-      <p class="mb-3 leading-none">Сбор гостей</p>
-  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg></a>
-</li>
-<li class="time-section_third mb-12 ms-8">
-  <div class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border  border-[#5b4f47] bg-[#5b4f47]"></div>
-  <p class="font-semibold">15.30</p>
-  <p class="mb-3 leading-none">Начало церемонии</p>
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg></a>
-</li>
-<li class="time-section_fourth mb-12 ms-8">
-  <div class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border  border-[#5b4f47] bg-[#5b4f47]"></div>
-  <p class="font-semibold">16.00 </p>
-  <p class="mb-3 leading-none">Начало банкета</p>
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg></a>
-</li>
-<li class="time-section_six mb-0 ms-8">
-  <div class="absolute top-1/2 w-4 h-4 bg-gray-[#5b4f47] rounded-full -start-10 border  border-[#5b4f47] bg-[#5b4f47]"></div>
-  <p class="font-semibold">23.00 </p>
-  <p class="mb-3 leading-none">Окончание свадьбы</p>
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg></a>
-</li>
-    </ol>
-</div>
+			<div class="colors-section max-w-screen-md mt-5 lg:mt-8">
+				<div class="colors grid grid-cols-5 gap-x-3">
+					<svg
+						class="color-first"
+						width="50"
+						height="50"
+						viewBox="0 0 80 80"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="40" cy="40" r="40" fill="#5C4F47" />
+					</svg>
+					<svg
+						class="color-second"
+						width="50"
+						height="50"
+						viewBox="0 0 80 80"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="40" cy="40" r="40" fill="#D8C4B6" />
+					</svg>
+					<svg
+						class="color-third"
+						width="50"
+						height="50"
+						viewBox="0 0 80 80"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="40" cy="40" r="40" fill="#E4D3C0" />
+					</svg>
+					<svg
+						class="color-fourth"
+						width="50"
+						height="50"
+						viewBox="0 0 80 80"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="40" cy="40" r="40" fill="#9C7B56" />
+					</svg>
+					<svg
+						class="color-fives"
+						width="50"
+						height="50"
+						viewBox="0 0 80 80"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="40" cy="40" r="40" fill="#FFC3D2" />
+					</svg>
+				</div>
+			</div>
+		</div>
 
+		<!-- Slider main container -->
+		<div class="overflow-hidden px-5 lg:mx-auto lg:max-w-2xl">
+			<div class="swiper h-[450px] w-10/12 mt-8 md:h-[500px]">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_1.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_2.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_3.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_4.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_5.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_6.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_7.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_8.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_9.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_10.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_11.JPG" alt="" />
+					</div>
+					<div class="swiper-slide rounded-lg">
+						<img class="" src="img/slider/slider_12.JPG" alt="" />
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination swiper-pagination-white"></div>
 
-<div class="color-section flex flex-col justify-center items-center text-center px-2 mt-20 lg:mt-24 lg:px-8">
-    <h2 class="font-semibold text-3xl lg:mt-18 lg:text-5xl">Дресс-код</h2>
-    <p class="max-w-md mt-2  text-gray-500 lg:max-w-lg lg:text-xl  lg:mt-5">Мы будем рады, если вы придержитесь данной цветовой палитры</p>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev swiper-button-white"></div>
+				<div class="swiper-button-next swiper-button-white"></div>
+			</div>
+		</div>
 
-<div class="colors-section max-w-screen-md mt-5 lg:mt-8">
-  <div class="colors grid grid-cols-5 gap-x-3">
-    <svg class="color-first" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="40" cy="40" r="40" fill="#5C4F47"/>
-      </svg>   
-      <svg class="color-second" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="40" cy="40" r="40" fill="#D8C4B6"/>
-        </svg>  
-        <svg class="color-third" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="40" cy="40" r="40" fill="#E4D3C0"/>
-          </svg>     
-          <svg class="color-fourth" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="40" cy="40" r="40" fill="#9C7B56"/>
-            </svg>  
-            <svg class="color-fives" width="50" height="50" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="40" cy="40" r="40" fill="#FFC3D2"/>
-              </svg>   
-  </div>
-</div>
-</div>
+		<section
+			class="gift-section flex flex-col justify-center items-center text-center px-2 mt-20 lg:px-8 lg:mt-24"
+		>
+			<h2 class="font-semibold text-3xl lg:text-5xl">Цветы</h2>
+			<p class="max-w-md mt-2 lg:max-w-lg lg:text-xl lg:mt-5 text-gray-500">
+				Пожалуйста, не дарите нам цветы, так как мы не успеем насладиться их
+				красотой до отъезда в свадебное путешествие <br />
+				Если вы хотите сделать нам комплимент, замените букет бутылкой вина,
+				книгой или букетом не из цветов
+			</p>
+			<div
+				class="opacity-70 mt-5 h-20 w-20 bg-local bg-center bg-contain bg-no-repeat"
+				style="background-image: url(img/free-icon-bouquet-1958392.png)"
+			></div>
+		</section>
 
-<!-- Slider main container -->
-<div class="overflow-hidden px-5 lg:mx-auto lg:max-w-2xl">
-<div class="swiper h-[450px] w-10/12 mt-8 md:h-[500px]">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_1.JPG" alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_2.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_3.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_4.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_5.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_6.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_7.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_8.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_9.JPG"  alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_10.JPG" alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_11.JPG" alt="">
-    </div>
-    <div class="swiper-slide rounded-lg">
-      <img class="" src="img/slider/slider_12.JPG" alt="">
-    </div>
+		<div
+			class="flex min-h-full flex-col justify-center items-center px-2 mt-20 lg:mt-24 lg:px-8"
+		>
+			<div class="sm:mx-auto sm:w-full sm:max-w-sm">
+				<h2 class="text-center font-semibold text-3xl lg:text-5xl">Анкета</h2>
+			</div>
 
+			<div class="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
+				<form
+					class="pageclip-form space-y-10"
+					action="https://send.pageclip.co/By4bnH6gIC5Y5KM3ZkSmN2rYESs5xJDF/Wedding"
+					class="pageclip-form"
+					method="post"
+				>
+					<div>
+						<label for="text" class="block text-xl leading-6">Ваше ФИО</label>
+						<div class="mt-2">
+							<input
+								id="text"
+								name="name"
+								type="text"
+								autocomplete="text"
+								required
+								class="block w-full rounded-md border-2 border-[#d6c4b5] p-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:border-[#5b4f47] sm:text-sm sm:leading-6"
+							/>
+						</div>
+					</div>
 
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination swiper-pagination-white"></div>
+					<div>
+						<label for="text" class="block text-xl leading-6"
+							>Номер телефона</label
+						>
+						<div class="mt-2">
+							<input
+								value=""
+								id="tel"
+								name="tel"
+								type="tel"
+								autocomplete="text"
+								placeholder="8 800-555-35-35"
+								required
+								class="block w-full rounded-md border-2 border-[#d6c4b5] p-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:border-[#5b4f47] sm:text-sm sm:leading-6"
+							/>
+						</div>
+					</div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev swiper-button-white"></div>
-  <div class="swiper-button-next swiper-button-white"></div>
-</div>
-</div>
+					<label for="text" class="block text-xl leading-6"
+						>Будете ли присутствовать?</label
+					>
+					<div>
+						<input
+							type="radio"
+							class="text-[#413329] focus:ring-[#413329]"
+							id="yes"
+							name="willCome"
+							value="yes"
+						/>
+						<label class="ml-1">Да</label>
+					</div>
+					<div>
+						<input
+							type="radio"
+							class="text-[#413329] focus:ring-[#413329]"
+							id="no"
+							name="willCome"
+							value="no"
+						/>
+						<label>Нет</label>
+					</div>
 
-<section class="gift-section flex flex-col justify-center items-center text-center px-2 mt-20 lg:px-8 lg:mt-24">
-  <h2 class="font-semibold text-3xl lg:text-5xl">Цветы</h2>
-  <p class="max-w-md mt-2 lg:max-w-lg lg:text-xl lg:mt-5 text-gray-500">Пожалуйста, не дарите нам цветы, так как мы не успеем насладиться их красотой до отъезда в свадебное путешествие <br> Если вы хотите сделать нам комплимент, замените букет бутылкой вина, книгой или букетом не из цветов</p>
-  <div class="opacity-70 mt-5 h-20 w-20 bg-local bg-center bg-contain bg-no-repeat" style="background-image: url(img/free-icon-bouquet-1958392.png)">
-</section>
+					<div class="hovered-input">
+						<label for="text" class="block text-xl leading-6"
+							>На чем будете добираться?</label
+						>
+						<div class="mt-10">
+							<input
+								type="radio"
+								class="text-[#413329] focus:ring-[#413329]"
+								id="transfer"
+								name="road"
+								value="transfer"
+							/>
+							<label>На трансфере</label>
+						</div>
+						<div class="mt-10">
+							<input
+								type="radio"
+								class="text-[#413329] focus:ring-[#413329]"
+								id="transfer"
+								name="road"
+								value="own"
+							/>
+							<label>Своим ходом</label>
+						</div>
 
-  </div>
-  <div class="flex min-h-full flex-col justify-center items-center px-2 mt-20 lg:mt-24 lg:px-8">
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 class="text-center font-semibold text-3xl lg:text-5xl">Анкета</h2>
-        </div>
-      
-        <div class="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form class="pageclip-form space-y-10" action="https://send.pageclip.co/By4bnH6gIC5Y5KM3ZkSmN2rYESs5xJDF/Wedding" class="pageclip-form" method="post">
-            <div>
-              <label for="text" class="block text-xl leading-6">Ваше ФИО</label>
-              <div class="mt-2">
-                <input id="text" name="name" type="text" autocomplete="text" required class="block w-full rounded-md border-2 border-[#d6c4b5] p-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:border-[#5b4f47] sm:text-sm sm:leading-6">
-              </div>
-            </div>
+						<label for="text" class="block text-xl leading-6 mt-10"
+							>Что предпочитаете из напитков?</label
+						>
+						<div class="mt-10">
+							<input
+								type="checkbox"
+								class="rounded text-[#413329] focus:ring-[#413329]"
+								name="drinks[whiteVine]"
+								id="whiteVine"
+							/>
+							<label htmlFor="whiteVine">Белое вино</label>
+						</div>
+						<div class="mt-10">
+							<input
+								type="checkbox"
+								class="rounded text-[#413329] focus:ring-[#413329]"
+								name="drinks[redVine]"
+								id="redVine"
+							/>
+							<label htmlFor="redVine">Красное вино</label>
+						</div>
+						<div class="mt-10">
+							<input
+								type="checkbox"
+								class="rounded text-[#413329] focus:ring-[#413329]"
+								name="drinks[vodka]"
+								id="vodka"
+							/>
+							<label htmlFor="vodka">Водка</label>
+						</div>
+						<div class="mt-10">
+							<input
+								type="checkbox"
+								class="rounded text-[#413329] focus:ring-[#413329]"
+								name="drinks[shampane]"
+								id="shampane"
+							/>
+							<label htmlFor="shampane">Шампанское</label>
+						</div>
+						<div class="mt-10">
+							<input
+								type="checkbox"
+								class="rounded text-[#413329] focus:ring-[#413329]"
+								name="drinks[notDrinks]"
+								id="notDrinks"
+								checked
+							/>
+							<label htmlFor="notDrinks">Не пью</label>
+						</div>
+					</div>
 
-            <div>
-              <label for="text" class="block text-xl leading-6">Номер телефона</label>
-              <div class="mt-2">
-                <input value="" id="tel" name="tel" type="tel" autocomplete="text" placeholder="8 800-555-35-35" required class="block w-full rounded-md border-2 border-[#d6c4b5] p-1.5  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:border-[#5b4f47] sm:text-sm sm:leading-6">
-              </div>
-            </div>
+					<div>
+						<button
+							type="submit"
+							id="sbmButton"
+							class="pageclip-form__submit flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]"
+						>
+							Отправить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
 
-            <label for="text" class="block text-xl leading-6 ">Будете ли присутствовать?</label>
-            <div>
-              <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="yes" name="willCome" value="yes"/>
-              <label class="ml-1">Да</label>
-            </div>
-            <div>
-              <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="no" name="willCome" value="no"/>
-              <label>Нет</label>
-            </div>
-            
-            <div class="hovered-input">
-            <label for="text" class="block text-xl leading-6">На чем будете добираться?</label>
-            <div class="mt-10">
-              <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="transfer"/>
-              <label>На трансфере</label>
-            </div>
-            <div class="mt-10">
-              <input type="radio" class="text-[#413329] focus:ring-[#413329]" id="transfer" name="road" value="own"/>
-              <label>Своим ходом</label>
-            </div>
-          
-            <label for="text" class="block text-xl leading-6 mt-10">Что предпочитаете из напитков?</label>
-            <div class="mt-10">
-              <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" name="drinks[whiteVine]" id="whiteVine"/>
-              <label htmlFor="whiteVine">Белое вино</label>
-            </div>
-            <div class="mt-10">
-              <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" name="drinks[redVine]" id="redVine"/>
-              <label htmlFor="redVine">Красное вино</label>
-            </div>
-            <div class="mt-10">
-              <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" name="drinks[vodka]" id="vodka"/>
-              <label htmlFor="vodka">Водка</label>
-            </div>
-            <div class="mt-10">
-              <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" name="drinks[shampane]" id="shampane"/>
-              <label htmlFor="shampane">Шампанское</label>
-            </div>
-            <div class="mt-10">
-              <input type="checkbox" class="rounded text-[#413329] focus:ring-[#413329]" name="drinks[notDrinks]" id="notDrinks" checked/>
-              <label htmlFor="notDrinks">Не пью</label>
-            </div>
-          </div>
+		<footer
+			class="m-auto flex flex-col justify-center items-center text-center py-20 px-2 mt-10 lg:px-8 bg-[#39302b] rounded-tr-lg rounded-tl-lg"
+		>
+			<h2 class="font-semibold text-3xl max-w-3xl lg:text-5xl text-white">
+				По всем вопросам можете писать невесте
+			</h2>
+			<button class="mt-2 mx-auto w-full max-w-sm px-2">
+				<a
+					class="flex justify-center rounded-md bg-[#fff9f1] px-3 py-3 text-sm font-semibold leading-6 text-[#39302b] shadow-sm hover:bg-[#e4d3c0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]"
+					href="https://t.me/MashaShevtsova"
+				>
+					Написать</a
+				>
+			</button>
+			<p class="max-w-md mt-4 lg:text-xl lg:mt-5 text-white">
+				Также, присоединяйтесь к свадебному чату, где будет вся информация про
+				трансфер, точное время и фотографии
+			</p>
+			<a href="https://t.me/+nCIgHBbkKnY0YWMy" class="mt-8">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="fill-white"
+					viewBox="0 0 50 50"
+					width="80px"
+					height="80px"
+				>
+					<path
+						d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 34.087891 14.035156 C 33.403891 14.035156 32.635328 14.193578 31.736328 14.517578 C 30.340328 15.020578 13.920734 21.992156 12.052734 22.785156 C 10.984734 23.239156 8.9960938 24.083656 8.9960938 26.097656 C 8.9960938 27.432656 9.7783594 28.3875 11.318359 28.9375 C 12.146359 29.2325 14.112906 29.828578 15.253906 30.142578 C 15.737906 30.275578 16.25225 30.34375 16.78125 30.34375 C 17.81625 30.34375 18.857828 30.085859 19.673828 29.630859 C 19.666828 29.798859 19.671406 29.968672 19.691406 30.138672 C 19.814406 31.188672 20.461875 32.17625 21.421875 32.78125 C 22.049875 33.17725 27.179312 36.614156 27.945312 37.160156 C 29.021313 37.929156 30.210813 38.335938 31.382812 38.335938 C 33.622813 38.335938 34.374328 36.023109 34.736328 34.912109 C 35.261328 33.299109 37.227219 20.182141 37.449219 17.869141 C 37.600219 16.284141 36.939641 14.978953 35.681641 14.376953 C 35.210641 14.149953 34.672891 14.035156 34.087891 14.035156 z M 34.087891 16.035156 C 34.362891 16.035156 34.608406 16.080641 34.816406 16.181641 C 35.289406 16.408641 35.530031 16.914688 35.457031 17.679688 C 35.215031 20.202687 33.253938 33.008969 32.835938 34.292969 C 32.477938 35.390969 32.100813 36.335938 31.382812 36.335938 C 30.664813 36.335938 29.880422 36.08425 29.107422 35.53125 C 28.334422 34.97925 23.201281 31.536891 22.488281 31.087891 C 21.863281 30.693891 21.201813 29.711719 22.132812 28.761719 C 22.899812 27.979719 28.717844 22.332938 29.214844 21.835938 C 29.584844 21.464938 29.411828 21.017578 29.048828 21.017578 C 28.923828 21.017578 28.774141 21.070266 28.619141 21.197266 C 28.011141 21.694266 19.534781 27.366266 18.800781 27.822266 C 18.314781 28.124266 17.56225 28.341797 16.78125 28.341797 C 16.44825 28.341797 16.111109 28.301891 15.787109 28.212891 C 14.659109 27.901891 12.750187 27.322734 11.992188 27.052734 C 11.263188 26.792734 10.998047 26.543656 10.998047 26.097656 C 10.998047 25.463656 11.892938 25.026 12.835938 24.625 C 13.831938 24.202 31.066062 16.883437 32.414062 16.398438 C 33.038062 16.172438 33.608891 16.035156 34.087891 16.035156 z"
+					/>
+				</svg>
+			</a>
+		</footer>
 
-            <div>
-              <button type="submit" id="sbmButton" class="pageclip-form__submit flex w-full justify-center rounded-md bg-[#5b4f47] px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#443b35] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+	</body>
 
-      <footer class="m-auto flex flex-col justify-center items-center text-center py-20 px-2 mt-10 lg:px-8 bg-[#39302b] rounded-tr-lg rounded-tl-lg">
-        <h2 class="font-semibold text-3xl max-w-3xl lg:text-5xl text-white">По всем вопросам можете писать невесте</h2>
-        <button class="mt-2 mx-auto w-full max-w-sm px-2">
-          <a class="flex justify-center rounded-md bg-[#fff9f1] px-3 py-3 text-sm font-semibold leading-6 text-[#39302b] shadow-sm hover:bg-[#e4d3c0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9b7a9]" href="https://t.me/MashaShevtsova">
-            Написать</a>
-        </button>
-        <p class="max-w-md mt-4 lg:text-xl lg:mt-5 text-white">Также, присоединяйтесь к свадебному чату, где будет вся информация про трансфер, точное время и фотографии</p>
-        <a href="https://t.me/+nCIgHBbkKnY0YWMy" class="mt-8">  
-<svg xmlns="http://www.w3.org/2000/svg" class="fill-white" viewBox="0 0 50 50" width="80px" height="80px">
-<path d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 34.087891 14.035156 C 33.403891 14.035156 32.635328 14.193578 31.736328 14.517578 C 30.340328 15.020578 13.920734 21.992156 12.052734 22.785156 C 10.984734 23.239156 8.9960938 24.083656 8.9960938 26.097656 C 8.9960938 27.432656 9.7783594 28.3875 11.318359 28.9375 C 12.146359 29.2325 14.112906 29.828578 15.253906 30.142578 C 15.737906 30.275578 16.25225 30.34375 16.78125 30.34375 C 17.81625 30.34375 18.857828 30.085859 19.673828 29.630859 C 19.666828 29.798859 19.671406 29.968672 19.691406 30.138672 C 19.814406 31.188672 20.461875 32.17625 21.421875 32.78125 C 22.049875 33.17725 27.179312 36.614156 27.945312 37.160156 C 29.021313 37.929156 30.210813 38.335938 31.382812 38.335938 C 33.622813 38.335938 34.374328 36.023109 34.736328 34.912109 C 35.261328 33.299109 37.227219 20.182141 37.449219 17.869141 C 37.600219 16.284141 36.939641 14.978953 35.681641 14.376953 C 35.210641 14.149953 34.672891 14.035156 34.087891 14.035156 z M 34.087891 16.035156 C 34.362891 16.035156 34.608406 16.080641 34.816406 16.181641 C 35.289406 16.408641 35.530031 16.914688 35.457031 17.679688 C 35.215031 20.202687 33.253938 33.008969 32.835938 34.292969 C 32.477938 35.390969 32.100813 36.335938 31.382812 36.335938 C 30.664813 36.335938 29.880422 36.08425 29.107422 35.53125 C 28.334422 34.97925 23.201281 31.536891 22.488281 31.087891 C 21.863281 30.693891 21.201813 29.711719 22.132812 28.761719 C 22.899812 27.979719 28.717844 22.332938 29.214844 21.835938 C 29.584844 21.464938 29.411828 21.017578 29.048828 21.017578 C 28.923828 21.017578 28.774141 21.070266 28.619141 21.197266 C 28.011141 21.694266 19.534781 27.366266 18.800781 27.822266 C 18.314781 28.124266 17.56225 28.341797 16.78125 28.341797 C 16.44825 28.341797 16.111109 28.301891 15.787109 28.212891 C 14.659109 27.901891 12.750187 27.322734 11.992188 27.052734 C 11.263188 26.792734 10.998047 26.543656 10.998047 26.097656 C 10.998047 25.463656 11.892938 25.026 12.835938 24.625 C 13.831938 24.202 31.066062 16.883437 32.414062 16.398438 C 33.038062 16.172438 33.608891 16.035156 34.087891 16.035156 z"/></svg>
-  </a>
-</footer>
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-      <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-
-
-    </body>
-
-    <script src="main.js"></script>
-
-    </html>
+	<script src="main.js"></script>
+</html>
